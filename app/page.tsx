@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Cards from "./components/Feature/cards";
+//import React, { useEffect } from "react";
+import Link from "@/node_modules/next/link";
+import React from "react";
+//import Cards from "./components/Feature/cards";
+import Content from "./components/Feature/content";
 import HeroBanner from "./components/Feature/herobanner";
-//import { AppBar, Toolbar } from '@mui/material';
+import Statcards from "./components/Feature/statcard";
+import StickyFooter from "./components/footer";
 
 import Nav from "./components/nav";
-//import Navbar from "./components/navbar";
 
 /*const theme = createTheme({
   palette: {
@@ -18,7 +21,11 @@ export default function Home() {
     <>
       <Nav></Nav>
       <HeroBanner></HeroBanner>
-      <Cards></Cards>
+      <Statcards></Statcards>
+      <React.StrictMode>
+      <Content></Content>
+      </React.StrictMode>
+      <StickyFooter></StickyFooter>
     </>    
   );
 }

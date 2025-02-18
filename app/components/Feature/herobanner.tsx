@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
+import Cards from "./cards";
+
+
 
 const HeroBanner = () => {
+
   return (
-    <Box
-      sx={{
+    <>
+    <Box sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -17,16 +21,17 @@ const HeroBanner = () => {
         textAlign: 'center'
       }}
     >
-      <Typography variant="h3" component="h2" gutterBottom>
+      <Typography variant="h3" component="h2" >
         Welcome to Nextjs with contentful 
       </Typography>
-      <Typography variant="h5" component="p" gutterBottom>
+      <Typography variant="h5" component="p" >
         POC for Consuming and Exposing 
       </Typography>
-      <Button variant="contained" color="secondary" gutterBottom>
+      <Button variant="contained" color="secondary" >
         Get Started
       </Button>
     </Box>
+    </>
   );
 };
 

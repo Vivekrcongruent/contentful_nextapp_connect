@@ -8,7 +8,7 @@ const menuItems = () => (
         <>
             <Link href="/">Home</Link>
             <Link href="/">Contact Us</Link>
-            <Link href="/">About</Link>
+            <Link href="/pages/users">Users</Link>
         </>
 );
 
@@ -38,9 +38,11 @@ const Nav = () => {
                         <Stack direction="row" gap={4} 
                             sx={{display: {xs: 'none', sm: 'flex', md: 'none', lg: 'flex', xl: 'flex'}}}
                         > 
+                            <>
                             <Link href="/">Home</Link>
-                            <Link href="/">About</Link>
-                            <Link href="/">Test</Link>
+                            <Link href="/fd">About</Link>
+                            <Link href="/pages/users">Users</Link>
+                            </>
                         </Stack>
                         
                         {/* Hamburger menu */}
@@ -65,7 +67,7 @@ const Nav = () => {
                         <Stack direction="column">
                             <Link href="/">Home</Link>
                             <Link href="/">About</Link>
-                            <Link href="/">Test</Link>
+                            <Link href="pages/users" passHref>Users</Link>
                         </Stack>
                     </ListItem>
                 </List>
